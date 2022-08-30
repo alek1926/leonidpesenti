@@ -18,11 +18,11 @@ export default function Home() {
         typography: {
             h1: {
                 fontFamily: "Helvetica",
-                fontSize: "4rem",
+                fontSize: "3rem",
             },
             h5: {
                 fontFamily: "Helvetica",
-                fontSize: "3.5rem",
+                fontSize: "2rem",
                 fontWeight: 300,
             }
         }
@@ -41,14 +41,14 @@ export default function Home() {
                     marginTop={!tablet?"0":"10vh"}
                 >
                 <Grid container direction={!sm ? "row" : "column"} >
-                    <Grid item xs={!sm?6:12} margin={!sm?"0%":"20%"}>
-                        <img src="https://i.imgur.com/cLXAcmo.png" width="50%" />
+                    <Grid item xs={!sm?5:12}marginRight={!sm?"0%":"25%"}paddingBottom={!sm?"0%":"25%"}>
+                        <img src="https://i.imgur.com/cLXAcmo.png" width={!sm?"50%":"100%"}/>
                     </Grid>
                     <Grid item xs={6}>
                         <Typography >
                             <Grid container direction="column">
                                 <Grid item xs={!tablet ? 6 : 12}>
-                                    <Typography variant="h1">
+                                    <Typography variant={!sm?"h1":"h5"}>
                                         Leonid Pesenti
                                     </Typography>
                                 </Grid>
