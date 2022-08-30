@@ -52,7 +52,7 @@ export default function Home() {
                                         Leonid Pesenti
                                     </Typography>
                                 </Grid>
-                                <Grid container direction="column" spacing={6} marginTop={"5vh"}>
+                                <Grid container direction="column" spacing={6} marginTop={"5vh"} marginLeft={tablet? "5vw":"-20vw"}>
                                     <Grid item width={!sm? "65%":"90%"} sx={{ display: "flex", justifyContent: "flex-end" }}>
                                         <Link to="/about" style={{ color: 'black' }}><Typography variant="h5">about</Typography>
                                         </Link>
