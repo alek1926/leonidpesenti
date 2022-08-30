@@ -2,12 +2,35 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Contact from './Pages/Contact';
+import Abstract from './Pages/Photographies/Abstract';
+import Architecture from './Pages/Photographies/Architecture';
+import Fashion from './Pages/Photographies/Fashion';
+import Potraits from './Pages/Photographies/Potraits';
+import Reportage from './Pages/Photographies/Reportage';
+import Photography from './Pages/Photography';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+    <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/photography" element={<Photography />} />
+        <Route path="/photographies/abstract" element={<Abstract />} />
+        <Route path="/photographies/architecture" element={<Architecture />} />
+        <Route path="/photographies/fashion" element={<Fashion />} />
+        <Route path="/photographies/potraits" element={<Potraits />} />
+        <Route path="/photographies/reportage" element={<Reportage />} />
+    </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
