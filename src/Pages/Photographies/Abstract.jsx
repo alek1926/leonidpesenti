@@ -33,11 +33,13 @@ export default function Abstract() {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: 400,
+        width: '50vw',
+        maxHeight: '80vh',
         bgcolor: 'background.paper',
         border: '2px solid #000',
         boxShadow: 24,
         p: 4,
+        overflow: 'auto'
     };
 
     const themeForBreakpoints = createTheme();
@@ -48,10 +50,12 @@ export default function Abstract() {
     let images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11];
 
     const [open, setOpen] = React.useState(false);
+    const [modalData, setModalData] = React.useState(null);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
     return (
+        
         <ThemeProvider theme={theme}>
             <Box
                 display="flex"
@@ -78,30 +82,31 @@ export default function Abstract() {
                             );
                         }
                         else {
-                            return (<>
+                            return (
                                 <Grid item xs={3}>
-                                    <Button onClick={handleOpen}>
-                                    <img src={image} width="100%" />
+                                    <Button onClick={()=>{
+                                        setModalData(image);
+                                         handleOpen();
+                                         }}>
+                                        <img src={image} width="100%" />
                                     </Button>
                                 </Grid>
-                                <Modal
-                                    open={open}
-                                    onClose={handleClose}
-                                    aria-labelledby="modal-modal-title"
-                                    aria-describedby="modal-modal-description"
-                                >
-                                    <Box sx={modalStyle}>
-                                    <img src={image} width="100%" />
-                                    </Box>
-                                </Modal>
-                            </>
                             );
                         }
                     })};
                 </Grid>
             </Box>
 
-
+            <Modal
+                open={open}
+                onClose={handleClose}
+                aria-labelledby="modal-modal-title"
+                aria-describedby="modal-modal-description"
+            >
+                <Box sx={modalStyle}>
+                    <img src={modalData} width="100%" />
+                </Box>
+            </Modal>
 
 
 
