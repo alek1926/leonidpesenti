@@ -30,7 +30,7 @@ export default function Photography() {
         <ListItem><Link to="/photographies/abstract" style={{ color: 'black', textDecoration: 'none' }}>// abstract</Link></ListItem>
         <ListItem><Link to="/photographies/architecture" style={{ color: 'black', textDecoration: 'none' }}>// architecture</Link></ListItem>
         <ListItem><Link to="/photographies/fashion" style={{ color: 'black', textDecoration: 'none' }}>// fashion</Link></ListItem>
-        <ListItem><Link to="/photographies/potraits" style={{ color: 'black', textDecoration: 'none' }}>// potraits</Link></ListItem>
+        <ListItem><Link to="/photographies/portraits" style={{ color: 'black', textDecoration: 'none' }}>// portraits</Link></ListItem>
         <ListItem><Link to="/photographies/reportage" style={{ color: 'black', textDecoration: 'none' }}>// reportage</Link></ListItem>
     </List>
     </Typography>

@@ -8,7 +8,7 @@ import Contact from './Pages/Contact';
 import Abstract from './Pages/Photographies/Abstract';
 import Architecture from './Pages/Photographies/Architecture';
 import Fashion from './Pages/Photographies/Fashion';
-import Potraits from './Pages/Photographies/Potraits';
+import Portraits from './Pages/Photographies/Portraits';
 import Reportage from './Pages/Photographies/Reportage';
 import Photography from './Pages/Photography';
 import reportWebVitals from './reportWebVitals';
@@ -27,7 +27,7 @@ root.render(
         <Route path="/photographies/abstract" element={<Abstract />} />
         <Route path="/photographies/architecture" element={<Architecture />} />
         <Route path="/photographies/fashion" element={<Fashion />} />
-        <Route path="/photographies/potraits" element={<Potraits />} />
+        <Route path="/photographies/portraits" element={<Portraits />} />
         <Route path="/photographies/reportage" element={<Reportage />} />
     </Routes>
     </BrowserRouter>
