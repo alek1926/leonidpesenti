@@ -18,11 +18,11 @@ export default function Home() {
         typography: {
             h1: {
                 fontFamily: "Helvetica",
-                fontSize: "3rem",
+                fontSize: "2.5rem",
             },
             h5: {
                 fontFamily: "Helvetica",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontWeight: 300,
             }
         }
@@ -37,6 +37,7 @@ export default function Home() {
                     justifyContent="center"
                     alignItems={!tablet?"center":"flex-start"}
                     minHeight="100vh"
+                    maxWidth="100vw"
                     marginLeft="20vw"
                     marginTop={!tablet?"0":"10vh"}
                 >
@@ -47,21 +48,21 @@ export default function Home() {
                     <Grid item xs={6}>
                         <Typography >
                             <Grid container direction="column">
-                                <Grid item xs={!tablet ? 6 : 12}>
-                                    <Typography variant={!sm?"h1":"h5"}>
+                                <Grid item xs={!tablet ? 6 : 12} sx={{ display: "flex", justifyContent: "center"}}>
+                                    <Typography variant={"h1"}>
                                         Leonid Pesenti
                                     </Typography>
                                 </Grid>
-                                <Grid container direction="column" spacing={6} marginTop={"5vh"} marginLeft={tablet? "5vw": sm ? "-20vw" : "0"}>
-                                    <Grid item width={!sm? "65%":"90%"} sx={{ display: "flex", justifyContent: "flex-end" }}>
+                                <Grid container direction="column" marginTop={"5vh"} marginLeft={tablet? "5vw": sm ? "-20vw" : "0"}>
+                                    <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>
                                         <Link to="/about" style={{ color: 'black' }}><Typography variant="h5">about</Typography>
                                         </Link>
                                     </Grid>
-                                    <Grid item width={!sm? "65%":"90%"} sx={{ display: "flex", justifyContent: "flex-end" }}>
+                                    <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>
                                         <Link to="/photography" style={{ color: 'black' }}><Typography variant="h5">photography</Typography>
                                         </Link>
                                     </Grid>
-                                    <Grid item width={!sm? "65%":"90%"} sx={{ display: "flex", justifyContent: "flex-end" }}>
+                                    <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>
                                         <Link to="/contact" style={{ color: 'black' }}><Typography variant="h5">contact</Typography>
                                         </Link>
                                     </Grid>

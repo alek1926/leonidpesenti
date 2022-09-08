@@ -25,7 +25,7 @@ export default function Photography() {
     minHeight="100vh"
     marginTop="5vh"
     >
-    <Typography variant="h1">// PHOTOGRAPHY
+    <Typography variant="h1">// photography
     <List sx={{marginLeft: '1vw'}}>
         <ListItem><Link to="/photographies/abstract" style={{ color: 'black', textDecoration: 'none' }}>// abstract</Link></ListItem>
         <ListItem><Link to="/photographies/architecture" style={{ color: 'black', textDecoration: 'none' }}>// architecture</Link></ListItem>

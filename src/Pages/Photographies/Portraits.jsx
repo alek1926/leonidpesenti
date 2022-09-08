@@ -74,8 +74,8 @@ export default function Portraits() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// PORTRAITS</Typography>
-        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="0vh">
+        <Typography variant="h1">// portraits</Typography>
+        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {
                             return (

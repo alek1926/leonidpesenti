@@ -33,7 +33,7 @@ export default function Architecture() {
         typography: {
             h1:{
                 fontFamily: "Helvetica",
-                fontSize: "2.9rem"
+                fontSize: "3rem"
             }
         }
     });
@@ -74,8 +74,8 @@ export default function Architecture() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// ARCHITECTURE</Typography>
-        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="0vh">
+        <Typography variant="h1">// architecture</Typography>
+        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {
                             return (

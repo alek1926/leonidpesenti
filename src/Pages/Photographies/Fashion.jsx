@@ -75,8 +75,8 @@ export default function Fashion() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// FASHION</Typography>
-        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="0vh">
+        <Typography variant="h1">// fashion</Typography>
+        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {
                             return (
