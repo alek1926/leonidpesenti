@@ -43,7 +43,7 @@ export default function Contact() {
                     </Grid>
                     <Grid item xs={12} marginTop="5vh">    
                         <Reaptcha
-                            sitekey={'6LfXzeMhAAAAAOaU6bOzjJqQDmqFVuQD1BxYNoVC'}
+                            sitekey={'6Le12eMhAAAAAAJkvS4zSYBrLI-rVvX5WF5v8lAR'}
                             onVerify={() => setVerified(true)}
                         >
                         </Reaptcha>
