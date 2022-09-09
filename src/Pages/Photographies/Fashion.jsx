@@ -10,7 +10,7 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 export default function Fashion() {
     const theme = createTheme({
         typography: {
-            h1:{
+            h1: {
                 fontFamily: "Helvetica",
                 fontSize: "3rem"
             }
@@ -53,20 +53,20 @@ export default function Fashion() {
                 flexDirection="column"
             >
                 <Grid container direction="column" alignItems="center">
-                    
-        <Typography variant="h1">// fashion</Typography>
-        <Link to = "/ph/fashion/postapocalyptichighfashion">
-            <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start' }}>// post apocalyptic high fashion</Typography>
-            </Link>
-        <Link to = "/ph/fashion/locarno">
-            <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start'  }}>// locarno</Typography>
-            </Link>
-        <Link to = "/ph/fashion/milan">
-            <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start'  }}>// milan</Typography>
-            </Link>
-            </Grid>
-        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
-                    {images.length>0 && images.map((image) => {
+
+                    <Typography variant="h1">// fashion</Typography>
+                    <Link to="/ph/fashion/postapocalyptichighfashion">
+                        <Typography variant="h1" style={{ color: 'black', alignItems: 'center'}}>// post apocalyptic high fashion</Typography>
+                    </Link>
+                    <Link to="/ph/fashion/locarno">
+                        <Typography variant="h1" style={{ color: 'black', alignItems: 'center'}}>// locarno</Typography>
+                    </Link>
+                    <Link to="/ph/fashion/milan">
+                        <Typography variant="h1" style={{ color: 'black', alignItems: 'center' }}>// milan</Typography>
+                    </Link>
+                </Grid>
+                <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
+                    {images.length > 0 && images.map((image) => {
                         if (tablet) {
                             return (
                                 <Grid item xs={6}>
@@ -84,10 +84,10 @@ export default function Fashion() {
                         else {
                             return (
                                 <Grid item xs={3}>
-                                    <Button onClick={()=>{
+                                    <Button onClick={() => {
                                         setModalData(image);
-                                         handleOpen();
-                                         }}>
+                                        handleOpen();
+                                    }}>
                                         <img src={image} width="100%" />
                                     </Button>
                                 </Grid>
@@ -95,10 +95,10 @@ export default function Fashion() {
                         }
                     })};
                 </Grid>
-    </Box>
+            </Box>
 
-    
-    <Modal
+
+            <Modal
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
@@ -113,6 +113,6 @@ export default function Fashion() {
 
 
 
-    </ThemeProvider>
+        </ThemeProvider>
     );
 }

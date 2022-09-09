@@ -59,7 +59,7 @@ export default function Home() {
                                         </Link>
                                     </Grid>
                                     <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>
-                                        <Link to="/ph" style={{ color: 'black' }}><Typography variant="h5">photographies</Typography>
+                                        <Link to="/ph" style={{ color: 'black' }}><Typography variant="h5">photography</Typography>
                                         </Link>
                                     </Grid>
                                     <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>
