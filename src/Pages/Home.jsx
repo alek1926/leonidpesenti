@@ -22,7 +22,7 @@ export default function Home() {
             },
             h5: {
                 fontFamily: "Helvetica",
-                fontSize: "1.5rem",
+                fontSize: "2rem",
                 fontWeight: 300,
             }
         }
@@ -59,7 +59,7 @@ export default function Home() {
                                         </Link>
                                     </Grid>
                                     <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>
-                                        <Link to="/photographies" style={{ color: 'black' }}><Typography variant="h5">photographies</Typography>
+                                        <Link to="/ph" style={{ color: 'black' }}><Typography variant="h5">photographies</Typography>
                                         </Link>
                                     </Grid>
                                     <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>

@@ -55,13 +55,13 @@ export default function Fashion() {
                 <Grid container direction="column" alignItems="center">
                     
         <Typography variant="h1">// fashion</Typography>
-        <Link to = "/photographies/fashion/postapocalyptichighfashion">
+        <Link to = "/ph/fashion/postapocalyptichighfashion">
             <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start' }}>// post apocalyptic high fashion</Typography>
             </Link>
-        <Link to = "/photographies/fashion/locarno">
+        <Link to = "/ph/fashion/locarno">
             <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start'  }}>// locarno</Typography>
             </Link>
-        <Link to = "/photographies/fashion/milan">
+        <Link to = "/ph/fashion/milan">
             <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start'  }}>// milan</Typography>
             </Link>
             </Grid>

@@ -27,11 +27,11 @@ export default function Photography() {
             >
                 <Typography variant="h1">// photographies
                     <List sx={{ marginLeft: '1vw' }}>
-                        <ListItem><Link to="/photographies/abstract" style={{ color: 'black', textDecoration: 'none' }}>// abstract</Link></ListItem>
-                        <ListItem><Link to="/photographies/architecture" style={{ color: 'black', textDecoration: 'none' }}>// architecture</Link></ListItem>
-                        <ListItem><Link to="/photographies/fashion" style={{ color: 'black', textDecoration: 'none' }}>// fashion</Link></ListItem>
-                        <ListItem><Link to="/photographies/portraits" style={{ color: 'black', textDecoration: 'none' }}>// portraits</Link></ListItem>
-                        <ListItem><Link to="/photographies/reportage" style={{ color: 'black', textDecoration: 'none' }}>// reportage</Link></ListItem>
+                        <ListItem><Link to="/ph/abstract" style={{ color: 'black', textDecoration: 'none' }}>// abstract</Link></ListItem>
+                        <ListItem><Link to="/ph/architecture" style={{ color: 'black', textDecoration: 'none' }}>// architecture</Link></ListItem>
+                        <ListItem><Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none' }}>// fashion</Link></ListItem>
+                        <ListItem><Link to="/ph/portraits" style={{ color: 'black', textDecoration: 'none' }}>// portraits</Link></ListItem>
+                        <ListItem><Link to="/ph/reportage" style={{ color: 'black', textDecoration: 'none' }}>// reportage</Link></ListItem>
                     </List>
                 </Typography>
             </Box>

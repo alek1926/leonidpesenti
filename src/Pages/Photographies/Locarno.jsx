@@ -58,7 +58,7 @@ export default function Fashion() {
                 flexDirection="column"
             >
                 <Typography variant="h1">// fashion</Typography>
-                <Link to="/photographies/fashion/locarno">
+                <Link to="/ph/fashion/locarno">
                     <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// locarno</Typography>
                 </Link>
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">

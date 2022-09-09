@@ -66,7 +66,7 @@ export default function Ukraine2022() {
                 flexDirection="column"
             >
         <Typography variant="h1">// reportage</Typography>
-        <Link to = "/photographies/reportage/ukraine2022">
+        <Link to = "/ph/reportage/ukraine2022">
             <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// ukraine2022</Typography>
             </Link>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">

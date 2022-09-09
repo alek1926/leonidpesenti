@@ -67,7 +67,7 @@ export default function WallTextures() {
                 flexDirection="column"
             >
         <Typography variant="h1">// architecture</Typography>
-        <Link to = "/photographies/architecture/walltextures">
+        <Link to = "/ph/architecture/walltextures">
             <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// wall textures</Typography>
             </Link>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">

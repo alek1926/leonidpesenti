@@ -67,7 +67,7 @@ export default function PostApocalypticHighFashion() {
                 flexDirection="column"
             >
                 <Typography variant="h1">// fashion</Typography>
-                <Link to="/photographies/fashion/postapocalyptichighfashion">
+                <Link to="/ph/fashion/postapocalyptichighfashion">
                     <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// post apocalyptic high fashion</Typography>
                 </Link>
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">

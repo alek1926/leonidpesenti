@@ -57,7 +57,7 @@ export default function Milan() {
                 flexDirection="column"
             >
                 <Typography variant="h1">// fashion</Typography>
-                <Link to="/photographies/fashion/milan">
+                <Link to="/ph/fashion/milan">
                     <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// milan</Typography>
                 </Link>
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">

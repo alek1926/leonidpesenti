@@ -24,22 +24,22 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
-    <Routes>
+      <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/photographies" element={<Photography />} />
-        <Route path="/photographies/abstract" element={<Abstract />} />
-        <Route path="/photographies/architecture" element={<Architecture />} />
-        <Route path="/photographies/architecture/walltextures" element={<WallTextures />} />
-        <Route path="/photographies/fashion" element={<Fashion />} />
-        <Route path="/photographies/fashion/postapocalyptichighfashion" element={<PostApocalypticHighFashion />} />
-        <Route path="/photographies/fashion/locarno" element={<Locarno />} />
-        <Route path="/photographies/fashion/milan" element={<Milan />} />
-        <Route path="/photographies/portraits" element={<Portraits />} />
-        <Route path="/photographies/reportage" element={<Reportage />} />
-        <Route path="/photographies/reportage/ukraine2022" element={<Ukraine2022 />} />
-    </Routes>
+        <Route path="/ph" element={<Photography />} />
+        <Route path="/ph/abstract" element={<Abstract />} />
+        <Route path="/ph/architecture" element={<Architecture />} />
+        <Route path="/ph/architecture/walltextures" element={<WallTextures />} />
+        <Route path="/ph/fashion" element={<Fashion />} />
+        <Route path="/ph/fashion/postapocalyptichighfashion" element={<PostApocalypticHighFashion />} />
+        <Route path="/ph/fashion/locarno" element={<Locarno />} />
+        <Route path="/ph/fashion/milan" element={<Milan />} />
+        <Route path="/ph/portraits" element={<Portraits />} />
+        <Route path="/ph/reportage" element={<Reportage />} />
+        <Route path="/ph/reportage/ukraine2022" element={<Ukraine2022 />} />
+      </Routes>
     </BrowserRouter>
   </React.StrictMode>
 );
