@@ -13,6 +13,7 @@ import Reportage from './Pages/Photographies/Reportage';
 import Photography from './Pages/Photography';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import WallTextures from './Pages/Photographies/WallTextures';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -23,9 +24,10 @@ root.render(
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/photography" element={<Photography />} />
+        <Route path="/photographies" element={<Photography />} />
         <Route path="/photographies/abstract" element={<Abstract />} />
         <Route path="/photographies/architecture" element={<Architecture />} />
+        <Route path="/photographies/architecture/walltextures" element={<WallTextures />} />
         <Route path="/photographies/fashion" element={<Fashion />} />
         <Route path="/photographies/portraits" element={<Portraits />} />
         <Route path="/photographies/reportage" element={<Reportage />} />

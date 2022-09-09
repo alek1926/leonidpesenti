@@ -6,17 +6,21 @@ import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import pic1 from "./photography/architecture/leonidpesenti-5.jpg";
-import pic2 from "./photography/architecture/leonidpesenti-7.jpg";
-import pic3 from "./photography/architecture/leonidpesenti-10.jpg";
-import pic4 from "./photography/architecture/leonidpesenti-33.jpg";
-import pic5 from "./photography/architecture/leonidpesenti-41.jpg";
-import pic6 from "./photography/architecture/leonidpesenti-43.jpg";
-import pic7 from "./photography/architecture/leonidpesenti-44.jpg";
-import pic8 from "./photography/architecture/leonidpesenti-53.jpg";
+import pic9 from "./photography/architecture/wall textures/leonidpesenti-2.jpg";
+import pic10 from "./photography/architecture/wall textures/leonidpesenti-3.jpg";
+import pic11 from "./photography/architecture/wall textures/leonidpesenti-4.jpg";
+import pic12 from "./photography/architecture/wall textures/leonidpesenti-6.jpg";
+import pic13 from "./photography/architecture/wall textures/leonidpesenti-8.jpg";
+import pic14 from "./photography/architecture/wall textures/leonidpesenti-9.jpg";
+import pic15 from "./photography/architecture/wall textures/leonidpesenti-11.jpg";
+import pic16 from "./photography/architecture/wall textures/leonidpesenti-12.jpg";
+import pic17 from "./photography/architecture/wall textures/leonidpesenti-13.jpg";
+import pic18 from "./photography/architecture/wall textures/leonidpesenti-34.jpg";
+import pic19 from "./photography/architecture/wall textures/leonidpesenti-42.jpg";
+import pic20 from "./photography/architecture/wall textures/leonidpesenti-52.jpg";
 
 
-export default function Architecture() {
+export default function WallTextures() {
     const theme = createTheme({
         typography: {
             h1:{
@@ -27,7 +31,7 @@ export default function Architecture() {
     });
 
     
-    let images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8];
+    let images = [pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20];
     const modalStyle = {
         position: 'absolute',
         top: '50%',
@@ -63,9 +67,7 @@ export default function Architecture() {
                 flexDirection="column"
             >
         <Typography variant="h1">// architecture</Typography>
-        <Link to = "/photographies/architecture/walltextures">
-            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// wall textures</Typography>
-            </Link>
+        <Typography variant="h1">// wall textures</Typography>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {
