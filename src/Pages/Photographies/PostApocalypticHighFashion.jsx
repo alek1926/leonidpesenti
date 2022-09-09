@@ -6,32 +6,32 @@ import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import pic9 from "./photography/architecture/wall textures/leonidpesenti-2.jpg";
-import pic10 from "./photography/architecture/wall textures/leonidpesenti-3.jpg";
-import pic11 from "./photography/architecture/wall textures/leonidpesenti-4.jpg";
-import pic12 from "./photography/architecture/wall textures/leonidpesenti-6.jpg";
-import pic13 from "./photography/architecture/wall textures/leonidpesenti-8.jpg";
-import pic14 from "./photography/architecture/wall textures/leonidpesenti-9.jpg";
-import pic15 from "./photography/architecture/wall textures/leonidpesenti-11.jpg";
-import pic16 from "./photography/architecture/wall textures/leonidpesenti-12.jpg";
-import pic17 from "./photography/architecture/wall textures/leonidpesenti-13.jpg";
-import pic18 from "./photography/architecture/wall textures/leonidpesenti-34.jpg";
-import pic19 from "./photography/architecture/wall textures/leonidpesenti-42.jpg";
-import pic20 from "./photography/architecture/wall textures/leonidpesenti-52.jpg";
+import pic10 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-24.jpg";
+import pic11 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-25.jpg";
+import pic12 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-26.jpg";
+import pic13 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-27.jpg";
+import pic14 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-28.jpg";
+import pic15 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-29.jpg";
+import pic16 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-30.jpg";
+import pic17 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-31.jpg";
+import pic18 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-79.jpg";
+import pic19 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-80.jpg";
+import pic20 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-81.jpg";
+import pic21 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-82.jpg";
+import pic22 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-83.jpg";
+import pic23 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-84.jpg";
 
-
-export default function WallTextures() {
+export default function PostApocalypticHighFashion() {
     const theme = createTheme({
         typography: {
-            h1:{
+            h1: {
                 fontFamily: "Helvetica",
                 fontSize: "3rem"
             }
         }
     });
+    let images = [pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23];
 
-    
-    let images = [pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20];
     const modalStyle = {
         position: 'absolute',
         top: '50%',
@@ -66,11 +66,11 @@ export default function WallTextures() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// architecture</Typography>
-        <Link to = "/photographies/architecture/walltextures">
-            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// wall textures</Typography>
-            </Link>
-        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
+                <Typography variant="h1">// fashion</Typography>
+                <Link to="/photographies/fashion/postapocalyptichighfashion">
+                    <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// post apocalyptic high fashion</Typography>
+                </Link>
+                <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {
                             return (
@@ -89,10 +89,10 @@ export default function WallTextures() {
                         else {
                             return (
                                 <Grid item xs={3}>
-                                    <Button onClick={()=>{
+                                    <Button onClick={() => {
                                         setModalData(image);
-                                         handleOpen();
-                                         }}>
+                                        handleOpen();
+                                    }}>
                                         <img src={image} width="100%" />
                                     </Button>
                                 </Grid>
@@ -100,10 +100,10 @@ export default function WallTextures() {
                         }
                     })};
                 </Grid>
-    </Box>
+            </Box>
 
-    
-    <Modal
+
+            <Modal
                 open={open}
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
@@ -118,6 +118,6 @@ export default function WallTextures() {
 
 
 
-    </ThemeProvider>
+        </ThemeProvider>
     );
 }

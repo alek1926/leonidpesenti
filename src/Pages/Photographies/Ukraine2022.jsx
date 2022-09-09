@@ -6,21 +6,21 @@ import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import pic9 from "./photography/architecture/wall textures/leonidpesenti-2.jpg";
-import pic10 from "./photography/architecture/wall textures/leonidpesenti-3.jpg";
-import pic11 from "./photography/architecture/wall textures/leonidpesenti-4.jpg";
-import pic12 from "./photography/architecture/wall textures/leonidpesenti-6.jpg";
-import pic13 from "./photography/architecture/wall textures/leonidpesenti-8.jpg";
-import pic14 from "./photography/architecture/wall textures/leonidpesenti-9.jpg";
-import pic15 from "./photography/architecture/wall textures/leonidpesenti-11.jpg";
-import pic16 from "./photography/architecture/wall textures/leonidpesenti-12.jpg";
-import pic17 from "./photography/architecture/wall textures/leonidpesenti-13.jpg";
-import pic18 from "./photography/architecture/wall textures/leonidpesenti-34.jpg";
-import pic19 from "./photography/architecture/wall textures/leonidpesenti-42.jpg";
-import pic20 from "./photography/architecture/wall textures/leonidpesenti-52.jpg";
+import pic1 from "./photography/reportage/ukraine 2022/leonidpesenti-32.jpg";
+import pic2 from "./photography/reportage/ukraine 2022/leonidpesenti-35.jpg";
+import pic3 from "./photography/reportage/ukraine 2022/leonidpesenti-36.jpg";
+import pic4 from "./photography/reportage/ukraine 2022/leonidpesenti-37.jpg";
+import pic5 from "./photography/reportage/ukraine 2022/leonidpesenti-38.jpg";
+import pic6 from "./photography/reportage/ukraine 2022/leonidpesenti-39.jpg";
+import pic7 from "./photography/reportage/ukraine 2022/leonidpesenti-40.jpg";
+import pic8 from "./photography/reportage/ukraine 2022/leonidpesenti-45.jpg";
+import pic9 from "./photography/reportage/ukraine 2022/leonidpesenti-46.jpg";
+import pic10 from "./photography/reportage/ukraine 2022/leonidpesenti-47.jpg";
+import pic11 from "./photography/reportage/ukraine 2022/leonidpesenti-49.jpg";
+import pic12 from "./photography/reportage/ukraine 2022/leonidpesenti-50.jpg";
+import pic13 from "./photography/reportage/ukraine 2022/leonidpesenti-51.jpg";
 
-
-export default function WallTextures() {
+export default function Ukraine2022() {
     const theme = createTheme({
         typography: {
             h1:{
@@ -29,9 +29,8 @@ export default function WallTextures() {
             }
         }
     });
-
-    
-    let images = [pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20];
+   
+    let images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13];
     const modalStyle = {
         position: 'absolute',
         top: '50%',
@@ -66,9 +65,9 @@ export default function WallTextures() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// architecture</Typography>
-        <Link to = "/photographies/architecture/walltextures">
-            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// wall textures</Typography>
+        <Typography variant="h1">// reportage</Typography>
+        <Link to = "/photographies/reportage/ukraine2022">
+            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// ukraine2022</Typography>
             </Link>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {

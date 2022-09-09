@@ -6,29 +6,6 @@ import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import pic1 from "./photography/fashion/locarno/leonidpesenti-67.jpg";
-import pic2 from "./photography/fashion/locarno/leonidpesenti-68.jpg";
-import pic3 from "./photography/fashion/locarno/leonidpesenti-69.jpg";
-import pic4 from "./photography/fashion/locarno/leonidpesenti-70.jpg";
-import pic5 from "./photography/fashion/locarno/leonidpesenti-71.jpg";
-import pic6 from "./photography/fashion/milan/leonidpesenti-72.jpg";
-import pic7 from "./photography/fashion/milan/leonidpesenti-73.jpg";
-import pic8 from "./photography/fashion/milan/leonidpesenti-74.jpg";
-import pic9 from "./photography/fashion/milan/leonidpesenti-75.jpg";
-import pic10 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-24.jpg";
-import pic11 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-25.jpg";
-import pic12 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-26.jpg";
-import pic13 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-27.jpg";
-import pic14 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-28.jpg";
-import pic15 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-29.jpg";
-import pic16 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-30.jpg";
-import pic17 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-31.jpg";
-import pic18 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-79.jpg";
-import pic19 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-80.jpg";
-import pic20 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-81.jpg";
-import pic21 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-82.jpg";
-import pic22 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-83.jpg";
-import pic23 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-84.jpg";
 
 export default function Fashion() {
     const theme = createTheme({
@@ -39,7 +16,7 @@ export default function Fashion() {
             }
         }
     });
-    let images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23];
+    let images = [];
 
     const modalStyle = {
         position: 'absolute',
@@ -75,9 +52,21 @@ export default function Fashion() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
+                <Grid container direction="column" alignItems="center">
+                    
         <Typography variant="h1">// fashion</Typography>
+        <Link to = "/photographies/fashion/postapocalyptichighfashion">
+            <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start' }}>// post apocalyptic high fashion</Typography>
+            </Link>
+        <Link to = "/photographies/fashion/locarno">
+            <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start'  }}>// locarno</Typography>
+            </Link>
+        <Link to = "/photographies/fashion/milan">
+            <Typography variant="h1" style={{ color: 'black', alignItems:'flex-start'  }}>// milan</Typography>
+            </Link>
+            </Grid>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
-                    {images.map((image) => {
+                    {images.length>0 && images.map((image) => {
                         if (tablet) {
                             return (
                                 <Grid item xs={6}>

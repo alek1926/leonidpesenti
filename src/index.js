@@ -14,6 +14,10 @@ import Photography from './Pages/Photography';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import WallTextures from './Pages/Photographies/WallTextures';
+import Milan from './Pages/Photographies/Milan';
+import Locarno from './Pages/Photographies/Locarno';
+import Ukraine2022 from './Pages/Photographies/Ukraine2022';
+import PostApocalypticHighFashion from './Pages/Photographies/PostApocalypticHighFashion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -29,8 +33,12 @@ root.render(
         <Route path="/photographies/architecture" element={<Architecture />} />
         <Route path="/photographies/architecture/walltextures" element={<WallTextures />} />
         <Route path="/photographies/fashion" element={<Fashion />} />
+        <Route path="/photographies/fashion/postapocalyptichighfashion" element={<PostApocalypticHighFashion />} />
+        <Route path="/photographies/fashion/locarno" element={<Locarno />} />
+        <Route path="/photographies/fashion/milan" element={<Milan />} />
         <Route path="/photographies/portraits" element={<Portraits />} />
         <Route path="/photographies/reportage" element={<Reportage />} />
+        <Route path="/photographies/reportage/ukraine2022" element={<Ukraine2022 />} />
     </Routes>
     </BrowserRouter>
   </React.StrictMode>

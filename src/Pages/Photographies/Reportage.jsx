@@ -6,19 +6,6 @@ import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import pic1 from "./photography/reportage/ukraine 2022/leonidpesenti-32.jpg";
-import pic2 from "./photography/reportage/ukraine 2022/leonidpesenti-35.jpg";
-import pic3 from "./photography/reportage/ukraine 2022/leonidpesenti-36.jpg";
-import pic4 from "./photography/reportage/ukraine 2022/leonidpesenti-37.jpg";
-import pic5 from "./photography/reportage/ukraine 2022/leonidpesenti-38.jpg";
-import pic6 from "./photography/reportage/ukraine 2022/leonidpesenti-39.jpg";
-import pic7 from "./photography/reportage/ukraine 2022/leonidpesenti-40.jpg";
-import pic8 from "./photography/reportage/ukraine 2022/leonidpesenti-45.jpg";
-import pic9 from "./photography/reportage/ukraine 2022/leonidpesenti-46.jpg";
-import pic10 from "./photography/reportage/ukraine 2022/leonidpesenti-47.jpg";
-import pic11 from "./photography/reportage/ukraine 2022/leonidpesenti-49.jpg";
-import pic12 from "./photography/reportage/ukraine 2022/leonidpesenti-50.jpg";
-import pic13 from "./photography/reportage/ukraine 2022/leonidpesenti-51.jpg";
 
 export default function Reportage() {
     const theme = createTheme({
@@ -30,7 +17,7 @@ export default function Reportage() {
         }
     });
    
-    let images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13];
+    let images = [];
     const modalStyle = {
         position: 'absolute',
         top: '50%',
@@ -66,8 +53,11 @@ export default function Reportage() {
                 flexDirection="column"
             >
         <Typography variant="h1">// reportage</Typography>
+        <Link to = "/photographies/reportage/ukraine2022">
+            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// ukraine2022</Typography>
+            </Link>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
-                    {images.map((image) => {
+                    {images.size > 0 && images.map((image) => {
                         if (tablet) {
                             return (
                                 <Grid item xs={6}>
