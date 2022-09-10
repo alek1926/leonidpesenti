@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Footer from "./Footer";
 
 export default function Home() {
 
@@ -18,11 +19,11 @@ export default function Home() {
         typography: {
             h1: {
                 fontFamily: "Helvetica",
-                fontSize: "2.5rem",
+                fontSize: "2rem",
             },
             h5: {
                 fontFamily: "Helvetica",
-                fontSize: "2rem",
+                fontSize: "1.5rem",
                 fontWeight: 300,
             }
         }
@@ -36,7 +37,7 @@ export default function Home() {
                     display="flex"
                     justifyContent="center"
                     alignItems={!tablet?"center":"flex-start"}
-                    minHeight="100vh"
+                    minHeight="95vh"
                     maxWidth="100vw"
                     marginLeft="20vw"
                     marginTop={!tablet?"0":"10vh"}
@@ -48,12 +49,12 @@ export default function Home() {
                     <Grid item xs={6}>
                         <Typography >
                             <Grid container direction="column">
-                                <Grid item xs={!tablet ? 6 : 12} sx={{ display: "flex", justifyContent: "center"}}>
+                                <Grid item xs={!tablet ? 6 : 12} sx={{ display: "flex", justifyContent: "flex-end"}} marginRight={sm ? "20vw" : "0"}>
                                     <Typography variant={"h1"}>
                                         Leonid Pesenti
                                     </Typography>
                                 </Grid>
-                                <Grid container direction="column" marginTop={"5vh"} marginLeft={tablet? "5vw": sm ? "-20vw" : "0"}>
+                                <Grid container marginTop={"5vh"} marginLeft={tablet? "5vw": sm ? "-20vw" : "0"} sx={{ display: "flex", justifyContent: "flex-end" }}>
                                     <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>
                                         <Link to="/about" style={{ color: 'black' }}><Typography variant="h5">about</Typography>
                                         </Link>
@@ -62,7 +63,7 @@ export default function Home() {
                                         <Link to="/ph" style={{ color: 'black' }}><Typography variant="h5">photography</Typography>
                                         </Link>
                                     </Grid>
-                                    <Grid item width={!sm? "65%":"90%"} marginBottom="3vw" sx={{ display: "flex", justifyContent: "flex-end" }}>
+                                    <Grid item width={!sm? "65%":"90%"} sx={{ display: "flex", justifyContent: "flex-end" }}>
                                         <Link to="/contact" style={{ color: 'black' }}><Typography variant="h5">contact</Typography>
                                         </Link>
                                     </Grid>
@@ -72,6 +73,7 @@ export default function Home() {
                     </Grid>
                 </Grid>
             </Box>
+            <Footer></Footer>
         </ThemeProvider>
     );
     }

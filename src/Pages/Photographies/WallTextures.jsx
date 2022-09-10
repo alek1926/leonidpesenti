@@ -18,6 +18,7 @@ import pic17 from "./photography/architecture/wall textures/leonidpesenti-13.jpg
 import pic18 from "./photography/architecture/wall textures/leonidpesenti-34.jpg";
 import pic19 from "./photography/architecture/wall textures/leonidpesenti-42.jpg";
 import pic20 from "./photography/architecture/wall textures/leonidpesenti-52.jpg";
+import Footer from "../Footer";
 
 
 export default function WallTextures() {
@@ -66,10 +67,8 @@ export default function WallTextures() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// architecture</Typography>
-        <Link to = "/ph/architecture/walltextures">
-            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// wall textures</Typography>
-            </Link>
+            <Link to="/ph/architecture" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// architecture</Link>
+            <Link to = "/ph/architecture/walltextures" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", fontFamily: "Helvetica"   }} marginLeft="2vw">// wall textures</Link>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {
@@ -116,6 +115,7 @@ export default function WallTextures() {
 
 
 
+            <Footer></Footer>
 
 
     </ThemeProvider>

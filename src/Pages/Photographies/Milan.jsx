@@ -10,6 +10,7 @@ import pic6 from "./photography/fashion/milan/leonidpesenti-72.jpg";
 import pic7 from "./photography/fashion/milan/leonidpesenti-73.jpg";
 import pic8 from "./photography/fashion/milan/leonidpesenti-74.jpg";
 import pic9 from "./photography/fashion/milan/leonidpesenti-75.jpg";
+import Footer from "../Footer";
 
 export default function Milan() {
     const theme = createTheme({
@@ -56,9 +57,8 @@ export default function Milan() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-                <Typography variant="h1">// fashion</Typography>
-                <Link to="/ph/fashion/milan">
-                    <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// milan</Typography>
+                <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// fashion</Link>
+                    <Link to="/ph/fashion/milan" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"    }} marginLeft="2vw">// milan
                 </Link>
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
@@ -107,6 +107,7 @@ export default function Milan() {
 
 
 
+            <Footer></Footer>
 
         </ThemeProvider>
     );

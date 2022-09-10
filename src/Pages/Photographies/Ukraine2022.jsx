@@ -19,6 +19,7 @@ import pic10 from "./photography/reportage/ukraine 2022/leonidpesenti-47.jpg";
 import pic11 from "./photography/reportage/ukraine 2022/leonidpesenti-49.jpg";
 import pic12 from "./photography/reportage/ukraine 2022/leonidpesenti-50.jpg";
 import pic13 from "./photography/reportage/ukraine 2022/leonidpesenti-51.jpg";
+import Footer from "../Footer";
 
 export default function Ukraine2022() {
     const theme = createTheme({
@@ -65,9 +66,8 @@ export default function Ukraine2022() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// reportage</Typography>
-        <Link to = "/ph/reportage/ukraine2022">
-            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// ukraine2022</Typography>
+            <Link to="/ph/reportage" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// reportage</Link>
+            <Link to = "/ph/reportage/ukraine2022" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:'2rem'  }} marginLeft="2vw">// ukraine2022
             </Link>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
@@ -116,6 +116,7 @@ export default function Ukraine2022() {
 
 
 
+            <Footer></Footer>
 
     </ThemeProvider>
     );

@@ -2,8 +2,10 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import Button from '@mui/material/Button';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Reaptcha from 'reaptcha';
+import Footer from "./Footer";
 
 
 export default function Contact() {
@@ -21,6 +23,9 @@ export default function Contact() {
         }
     });
 
+    let [clicked, setClicked] = React.useState(false);
+    let [instaClick, setInstaClick] = React.useState(false);
+
     let [verified, setVerified] = React.useState(false);
 
     return (
@@ -29,7 +34,7 @@ export default function Contact() {
                 display="flex"
                 justifyContent="center"
                 alignItems="start"
-                minHeight="100vh"
+                minHeight="95vh"
                 marginTop="5vh"
             >
                 <Grid container
@@ -41,19 +46,23 @@ export default function Contact() {
 
                         <Typography variant="h1">// contact</Typography>
                     </Grid>
-                    <Grid item xs={12} marginTop="5vh">    
-                        <Reaptcha
+                    <Grid item xs={12} marginTop="5vh">
+                        <Button onClick={() => setInstaClick(true)} style={{ color: 'black', textDecoration: 'none', fontSize:"1.2rem", fontFamily: 'Helvetica'}}>instagram</Button>
+                        {instaClick && <a href="https://www.instagram.com/hennibbale/" style={{ color: 'black', textDecoration: 'none', fontSize:"1rem"}}>@hennibbale</a>}
+                </Grid>
+                        <Button onClick={() => setClicked(true)}style={{ color: 'black', textDecoration: 'none', fontSize:"1.2rem", fontFamily: 'Helvetica', marginTop:"5vh"      }}>e-mail</Button>
+                        {clicked && <Reaptcha
                             sitekey={'6Le12eMhAAAAAAJkvS4zSYBrLI-rVvX5WF5v8lAR'}
                             onVerify={() => setVerified(true)}
                         >
-                        </Reaptcha>
-                        {verified && 
-                        <Typography variant="h5">pesentileonid@gmail.com
-                        </Typography>        
+                        </Reaptcha>}
+                        {verified &&
+                            <a href="mailto:pesentileonid@gmail.com" style={{ color: 'black', textDecoration: 'none', fontSize:"1rem"}}>pesentileonid@gmail.com</a>
                         }
                     </Grid>
-                </Grid>
+
             </Box>
+            <Footer></Footer>
         </ThemeProvider>
     );
 }

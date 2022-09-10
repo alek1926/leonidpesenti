@@ -11,6 +11,7 @@ import pic2 from "./photography/fashion/locarno/leonidpesenti-68.jpg";
 import pic3 from "./photography/fashion/locarno/leonidpesenti-69.jpg";
 import pic4 from "./photography/fashion/locarno/leonidpesenti-70.jpg";
 import pic5 from "./photography/fashion/locarno/leonidpesenti-71.jpg";
+import Footer from "../Footer";
 
 export default function Fashion() {
     const theme = createTheme({
@@ -57,9 +58,8 @@ export default function Fashion() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-                <Typography variant="h1">// fashion</Typography>
-                <Link to="/ph/fashion/locarno">
-                    <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// locarno</Typography>
+            <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// fashion</Link>
+                    <Link to="/ph/fashion/locarno"  style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"  }} marginLeft="2vw">// locarno
                 </Link>
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
@@ -108,6 +108,7 @@ export default function Fashion() {
 
 
 
+            <Footer></Footer>
 
         </ThemeProvider>
     );

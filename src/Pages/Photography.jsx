@@ -5,6 +5,7 @@ import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
+import Footer from "./Footer";
 
 export default function Photography() {
     const theme = createTheme({
@@ -22,11 +23,11 @@ export default function Photography() {
                 display="flex"
                 justifyContent="center"
                 alignItems="start"
-                minHeight="100vh"
+                minHeight="95vh"
                 marginTop="5vh"
             >
                 <Typography variant="h1">// photographies
-                    <List sx={{ marginLeft: '1vw' }}>
+                    <List sx={{ marginLeft: '2vw' }}>
                         <ListItem><Link to="/ph/abstract" style={{ color: 'black', textDecoration: 'none' }}>// abstract</Link></ListItem>
                         <ListItem><Link to="/ph/architecture" style={{ color: 'black', textDecoration: 'none' }}>// architecture</Link></ListItem>
                         <ListItem><Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none' }}>// fashion</Link></ListItem>
@@ -35,6 +36,7 @@ export default function Photography() {
                     </List>
                 </Typography>
             </Box>
+            <Footer></Footer>
             <Outlet />
         </ThemeProvider>
     );

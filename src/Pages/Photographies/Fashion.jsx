@@ -6,6 +6,9 @@ import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import Footer from "../Footer";
 
 export default function Fashion() {
     const theme = createTheme({
@@ -52,67 +55,67 @@ export default function Fashion() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-                <Grid container direction="column" alignItems="center">
 
-                    <Typography variant="h1">// fashion</Typography>
-                    <Link to="/ph/fashion/postapocalyptichighfashion">
-                        <Typography variant="h1" style={{ color: 'black', alignItems: 'center'}}>// post apocalyptic high fashion</Typography>
-                    </Link>
-                    <Link to="/ph/fashion/locarno">
-                        <Typography variant="h1" style={{ color: 'black', alignItems: 'center'}}>// locarno</Typography>
-                    </Link>
-                    <Link to="/ph/fashion/milan">
-                        <Typography variant="h1" style={{ color: 'black', alignItems: 'center' }}>// milan</Typography>
-                    </Link>
-                </Grid>
-                <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
-                    {images.length > 0 && images.map((image) => {
-                        if (tablet) {
-                            return (
-                                <Grid item xs={6}>
-                                    <img src={image} width="100%" />
-                                </Grid>
-                            );
-                        }
-                        else if (sm) {
-                            return (
-                                <Grid item xs={12}>
-                                    <img src={image} width="100%" />
-                                </Grid>
-                            );
-                        }
-                        else {
-                            return (
-                                <Grid item xs={3}>
-                                    <Button onClick={() => {
-                                        setModalData(image);
-                                        handleOpen();
-                                    }}>
-                                        <img src={image} width="100%" />
-                                    </Button>
-                                </Grid>
-                            );
-                        }
-                    })};
-                </Grid>
-            </Box>
+                    <Typography variant="h1">// fashion
+                    <List sx={{ marginLeft: '1vw' }}>
+                    <ListItem><Link to="/ph/fashion/postapocalyptichighfashion" style={{ color: 'black', alignItems: 'center', textDecoration: 'none' }}>// post apocalyptic high fashion
+                    </Link></ListItem>
+                        <ListItem><Link to="/ph/fashion/locarno" style={{ color: 'black', alignItems: 'center', textDecoration: 'none' }}>// locarno
+                        </Link></ListItem>
+                        <ListItem>
+                            <Link to="/ph/fashion/milan" style={{ color: 'black', alignItems: 'center', textDecoration: 'none' }}>// milan
+                            </Link></ListItem>
+                            </List>
+                        </Typography>
+                        <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
+                            {images.length > 0 && images.map((image) => {
+                                if (tablet) {
+                                    return (
+                                        <Grid item xs={6}>
+                                            <img src={image} width="100%" />
+                                        </Grid>
+                                    );
+                                }
+                                else if (sm) {
+                                    return (
+                                        <Grid item xs={12}>
+                                            <img src={image} width="100%" />
+                                        </Grid>
+                                    );
+                                }
+                                else {
+                                    return (
+                                        <Grid item xs={3}>
+                                            <Button onClick={() => {
+                                                setModalData(image);
+                                                handleOpen();
+                                            }}>
+                                                <img src={image} width="100%" />
+                                            </Button>
+                                        </Grid>
+                                    );
+                                }
+                            })};
+                        </Grid>
+                    </Box>
 
 
-            <Modal
-                open={open}
-                onClose={handleClose}
-                aria-labelledby="modal-modal-title"
-                aria-describedby="modal-modal-description"
-            >
-                <Box sx={modalStyle}>
-                    <img src={modalData} width="100%" />
-                </Box>
-            </Modal>
-
+                    <Modal
+                        open={open}
+                        onClose={handleClose}
+                        aria-labelledby="modal-modal-title"
+                        aria-describedby="modal-modal-description"
+                    >
+                        <Box sx={modalStyle}>
+                            <img src={modalData} width="100%" />
+                        </Box>
+                    </Modal>
 
 
 
 
-        </ThemeProvider>
-    );
+
+                    <Footer></Footer>
+                </ThemeProvider>
+                );
 }

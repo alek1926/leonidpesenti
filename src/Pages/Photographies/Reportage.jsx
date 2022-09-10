@@ -6,6 +6,7 @@ import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
+import Footer from "../Footer";
 
 export default function Reportage() {
     const theme = createTheme({
@@ -52,9 +53,8 @@ export default function Reportage() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// reportage</Typography>
-        <Link to = "/ph/reportage/ukraine2022">
-            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// ukraine2022</Typography>
+            <Link to="/ph/reportage" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// reportage</Link>
+            <Link to="/ph/reportage/ukraine2022" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"  }} marginLeft="2vw">// ukraine2022
             </Link>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.size > 0 && images.map((image) => {
@@ -104,6 +104,7 @@ export default function Reportage() {
 
 
 
+            <Footer></Footer>
     </ThemeProvider>
     );
 }

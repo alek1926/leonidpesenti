@@ -4,7 +4,8 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
-import pic from './Photographies/photography/fashion/post-apocalyptic high fashion/leonidpesenti-29.jpg';
+import pic from './Photographies/photography/tq1yA46.jpeg';
+import Footer from "./Footer.jsx";
 
 export default function About() {
     const theme = createTheme({
@@ -23,13 +24,15 @@ export default function About() {
     const themeForBreakpoints = createTheme();
 
     const sm = useMediaQuery(themeForBreakpoints.breakpoints.down('sm'));
+    const tablet = useMediaQuery('(min-width:768px) and (max-width:1000px)');
+
     return (
         <ThemeProvider theme={theme}>
             <Box
                 display="flex"
                 justifyContent="center"
                 alignItems="start"
-                minHeight="100vh"
+                minHeight="95vh"
                 marginTop="5vh"
                 maxWidth="100vw"
             >
@@ -37,18 +40,20 @@ export default function About() {
                     spacing={0}
                     direction="column"
                     alignItems="center"
-                    justifyContent="center">
+                    justifyContent="center"
+                    maxWidth="100vw">
                     <Grid item xs={12}>
                         <Typography variant="h1">// about</Typography>
                     </Grid>
-                    <Grid item xs={12} marginTop = "5vh">
+                    <Grid item xs={12} marginTop = "5vh" marginLeft={sm?"3vw":0}>
                         <Typography variant="h3">russian-born switzerland-based mathematics and psychology student</Typography>
                     </Grid>
-                    <Grid item xs={12} marginTop = "5vh">
-                        <img src={pic} width={sm && "350"}></img>
+                    <Grid item xs={12} margin = "5vw" width={'90vw'} justifyContent="center">
+                        <img src={pic} width={'100%'}></img>
                     </Grid>
                 </Grid>
             </Box>
+            <Footer></Footer>
         </ThemeProvider>
     );
 }

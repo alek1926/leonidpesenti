@@ -17,6 +17,7 @@ import pic8 from "./photography/abstract/leonidpesenti-85.jpg";
 import pic9 from "./photography/abstract/leonidpesenti-86.jpg";
 import pic10 from "./photography/abstract/leonidpesenti-87.jpg";
 import pic11 from "./photography/abstract/leonidpesenti-88.jpg";
+import Footer from "../Footer";
 
 export default function Abstract() {
     const theme = createTheme({
@@ -112,6 +113,7 @@ export default function Abstract() {
 
 
 
+            <Footer></Footer>
         </ThemeProvider>
     );
 }

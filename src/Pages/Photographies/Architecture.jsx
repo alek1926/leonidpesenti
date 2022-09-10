@@ -14,6 +14,7 @@ import pic5 from "./photography/architecture/leonidpesenti-41.jpg";
 import pic6 from "./photography/architecture/leonidpesenti-43.jpg";
 import pic7 from "./photography/architecture/leonidpesenti-44.jpg";
 import pic8 from "./photography/architecture/leonidpesenti-53.jpg";
+import Footer from "../Footer";
 
 
 export default function Architecture() {
@@ -62,10 +63,9 @@ export default function Architecture() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-        <Typography variant="h1">// architecture</Typography>
-        <Link to = "/ph/architecture/walltextures">
-            <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// wall textures</Typography>
-            </Link>
+            <Link to="/ph/architecture" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// architecture</Link>
+        <Link to = "/ph/architecture/walltextures" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", fontFamily: "Helvetica"  }} marginLeft="2vw">// wall textures</Link>
+        
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {
@@ -113,6 +113,7 @@ export default function Architecture() {
 
 
 
+            <Footer></Footer>
 
     </ThemeProvider>
     );

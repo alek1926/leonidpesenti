@@ -27,6 +27,7 @@ import pic18 from "./photography/portraits/leonidpesenti-64.jpg";
 import pic19 from "./photography/portraits/leonidpesenti-76.jpg";
 import pic20 from "./photography/portraits/leonidpesenti-77.jpg";
 import pic21 from "./photography/portraits/leonidpesenti-78.jpg";
+import Footer from "../Footer";
 
 
 export default function Portraits() {
@@ -123,6 +124,7 @@ export default function Portraits() {
 
 
 
+            <Footer></Footer>
     </ThemeProvider>
     );
 }

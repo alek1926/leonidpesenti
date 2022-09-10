@@ -20,6 +20,7 @@ import pic20 from "./photography/fashion/post-apocalyptic high fashion/leonidpes
 import pic21 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-82.jpg";
 import pic22 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-83.jpg";
 import pic23 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-84.jpg";
+import Footer from "../Footer";
 
 export default function PostApocalypticHighFashion() {
     const theme = createTheme({
@@ -66,10 +67,11 @@ export default function PostApocalypticHighFashion() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-                <Typography variant="h1">// fashion</Typography>
-                <Link to="/ph/fashion/postapocalyptichighfashion">
-                    <Typography variant="h1" style={{ color: 'black' }} marginLeft="2vw">// post apocalyptic high fashion</Typography>
+            <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// fashion</Link>
+                    <Link to="/ph/fashion/postapocalyptichighfashion" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"    }} marginLeft="2vw">// post apocalyptic high fashion
                 </Link>
+
+                
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {
@@ -118,6 +120,7 @@ export default function PostApocalypticHighFashion() {
 
 
 
+            <Footer></Footer>
         </ThemeProvider>
     );
 }
