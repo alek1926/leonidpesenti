@@ -71,21 +71,21 @@ export default function Fashion() {
                             {images.length > 0 && images.map((image) => {
                                 if (tablet) {
                                     return (
-                                        <Grid item xs={6}>
+                                        <Grid item xs={6} key={image} >
                                             <img src={image} width="100%" />
                                         </Grid>
                                     );
                                 }
                                 else if (sm) {
                                     return (
-                                        <Grid item xs={12}>
+                                        <Grid item xs={12} key={image} >
                                             <img src={image} width="100%" />
                                         </Grid>
                                     );
                                 }
                                 else {
                                     return (
-                                        <Grid item xs={3}>
+                                        <Grid item xs={3} key={image} >
                                             <Button onClick={() => {
                                                 setModalData(image);
                                                 handleOpen();
@@ -95,7 +95,7 @@ export default function Fashion() {
                                         </Grid>
                                     );
                                 }
-                            })};
+                            })}
                         </Grid>
                     </Box>
 
@@ -115,7 +115,7 @@ export default function Fashion() {
 
 
 
-                    <Footer></Footer>
+                    <Footer style={{marginTop: 'auto', position: 'fixed'}}></Footer>
                 </ThemeProvider>
                 );
 }

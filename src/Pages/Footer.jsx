@@ -1,19 +1,18 @@
-import { ThemeProvider, createTheme, Typography, Grid } from '@mui/material';
-import { textAlign } from "@mui/system";
+import { Typography, Grid } from '@mui/material';
 import * as React from "react";
 
 export default function Footer() {
-    
-    const theme = createTheme({
-        typography: {
-            h5: {
-                fontFamily: "Helvetica",
-                fontSize: "0.8rem"
-            }
-        }
-    });
+    const styles = {
+          width: '100%',
+          position: 'fixed',
+          bottom: 0,
+          textAlign:'center', 
+          marginTop: 'auto',  
+          position: 'fixed'
+        };
+
             return (
-                <Grid  style={{textAlign:'center'}}>
+                <Grid style={styles}>
                 <Typography variant="h5">© LP 2019-2022</Typography>
                 </Grid>
     );

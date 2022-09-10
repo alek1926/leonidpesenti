@@ -1,6 +1,5 @@
 import * as React from "react";
 import { Link, Outlet } from "react-router-dom";
-import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import List from '@mui/material/List';
@@ -23,7 +22,7 @@ export default function Photography() {
                 display="flex"
                 justifyContent="center"
                 alignItems="start"
-                minHeight="95vh"
+                minHeight="90vh"
                 marginTop="5vh"
             >
                 <Typography variant="h1">// photographies

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
-import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Footer from "./Footer";
 
@@ -47,7 +46,7 @@ export default function Home() {
                         <img src="https://i.imgur.com/cLXAcmo.png" width={!sm?"50%":"100%"}/>
                     </Grid>
                     <Grid item xs={6}>
-                        <Typography >
+                        <Typography component={'span'}>
                             <Grid container direction="column">
                                 <Grid item xs={!tablet ? 6 : 12} sx={{ display: "flex", justifyContent: "flex-end"}} marginRight={sm ? "20vw" : "0"}>
                                     <Typography variant={"h1"}>

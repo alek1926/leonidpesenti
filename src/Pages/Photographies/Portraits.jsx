@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
@@ -80,21 +79,21 @@ export default function Portraits() {
                     {images.map((image) => {
                         if (tablet) {
                             return (
-                                <Grid item xs={6}>
+                                <Grid item xs={6} key={image} >
                                     <img src={image} width="100%" />
                                 </Grid>
                             );
                         }
                         else if (sm) {
                             return (
-                                <Grid item xs={12}>
+                                <Grid item xs={12} key={image} >
                                     <img src={image} width="100%" />
                                 </Grid>
                             );
                         }
                         else {
                             return (
-                                <Grid item xs={3}>
+                                <Grid item xs={3} key={image} >
                                     <Button onClick={()=>{
                                         setModalData(image);
                                          handleOpen();
@@ -104,7 +103,7 @@ export default function Portraits() {
                                 </Grid>
                             );
                         }
-                    })};
+                    })}
                 </Grid>
     </Box>
 

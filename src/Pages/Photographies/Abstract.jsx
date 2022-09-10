@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
@@ -70,31 +69,31 @@ export default function Abstract() {
                     {images.map((image) => {
                         if (tablet) {
                             return (
-                                <Grid item xs={6}>
-                                    <img src={image} width="100%" />
+                                <Grid item xs={6} key={image} >
+                                    <img src={image}width="100%" />
                                 </Grid>
                             );
                         }
                         else if (sm) {
                             return (
-                                <Grid item xs={12}>
-                                    <img src={image} width="100%" />
+                                <Grid item xs={12} key={image}  >
+                                    <img src={image}width="100%" />
                                 </Grid>
                             );
                         }
                         else {
                             return (
-                                <Grid item xs={3}>
+                                <Grid item xs={3} key={image}  >
                                     <Button onClick={()=>{
                                         setModalData(image);
                                          handleOpen();
                                          }}>
-                                        <img src={image} width="100%" />
+                                        <img src={image}width="100%" />
                                     </Button>
                                 </Grid>
                             );
                         }
-                    })};
+                    })}
                 </Grid>
             </Box>
 
