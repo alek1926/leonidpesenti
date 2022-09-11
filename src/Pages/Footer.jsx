@@ -13,7 +13,7 @@ export default function Footer(props) {
 
             return (
                 <Grid style={styles}>
-                <h5>© LP 2019-2022 | AC</h5>
+                <h5>© LP 2019-2022 | AC | LG</h5>
                 </Grid>
     );
     }
