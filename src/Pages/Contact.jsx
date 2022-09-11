@@ -33,7 +33,6 @@ export default function Contact() {
                 display="flex"
                 justifyContent="center"
                 alignItems="start"
-                minHeight="95vh"
                 marginTop="5vh"
             >
                 <Grid container
@@ -50,7 +49,7 @@ export default function Contact() {
                         {instaClick && <a href="https://www.instagram.com/hennibbale/" style={{ color: 'black', textDecoration: 'none', fontSize:"1rem"}}>@hennibbale</a>}
                 </Grid>
                         <Button onClick={() => setClicked(true)}style={{ color: 'black', textDecoration: 'none', fontSize:"1.2rem", fontFamily: 'Helvetica', marginTop:"5vh"      }}>e-mail</Button>
-                        {clicked && <Reaptcha
+                        {clicked && !verified && <Reaptcha
                             sitekey={'6Le12eMhAAAAAAJkvS4zSYBrLI-rVvX5WF5v8lAR'}
                             onVerify={() => setVerified(true)}
                         >
@@ -61,7 +60,7 @@ export default function Contact() {
                     </Grid>
 
             </Box>
-            <Footer></Footer>
+            <Footer fixed></Footer>
         </ThemeProvider>
     );
 }

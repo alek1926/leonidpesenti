@@ -68,7 +68,7 @@ export default function PostApocalypticHighFashion() {
                 flexDirection="column"
             >
             <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// fashion</Link>
-                    <Link to="/ph/fashion/postapocalyptichighfashion" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"    }} marginLeft="2vw">// post apocalyptic high fashion
+                    <Link to="/ph/fashion/postapocalyptichighfashion" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"    }} marginLeft="2vw">// post-apocalyptic high fashion
                 </Link>
 
                 

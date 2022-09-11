@@ -91,6 +91,7 @@ export default function Fashion() {
                         }
                     })}
                 </Grid>
+            <Footer></Footer>
             </Box>
 
 
@@ -108,7 +109,6 @@ export default function Fashion() {
 
 
 
-            <Footer></Footer>
 
         </ThemeProvider>
     );
