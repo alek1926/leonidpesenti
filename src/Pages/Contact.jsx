@@ -34,6 +34,7 @@ export default function Contact() {
                 justifyContent="center"
                 alignItems="start"
                 marginTop="5vh"
+                height="87vh"
             >
                 <Grid container
                     spacing={0}
@@ -45,19 +46,25 @@ export default function Contact() {
                         <Typography variant="h1">// contact</Typography>
                     </Grid>
                     <Grid item xs={12} marginTop="5vh">
-                        <Button onClick={() => setInstaClick(true)} style={{ color: 'black', textDecoration: 'none', fontSize:"1.2rem", fontFamily: 'Helvetica'}}>instagram</Button>
-                        {instaClick && <a href="https://www.instagram.com/hennibbale/" style={{ color: 'black', textDecoration: 'none', fontSize:"1rem"}}>@hennibbale</a>}
-                </Grid>
-                        <Button onClick={() => setClicked(true)}style={{ color: 'black', textDecoration: 'none', fontSize:"1.2rem", fontFamily: 'Helvetica', marginTop:"5vh"      }}>e-mail</Button>
-                        {clicked && !verified && <Reaptcha
-                            sitekey={'6Le12eMhAAAAAAJkvS4zSYBrLI-rVvX5WF5v8lAR'}
-                            onVerify={() => setVerified(true)}
-                        >
-                        </Reaptcha>}
-                        {verified &&
-                            <a href="mailto:pesentileonid@gmail.com" style={{ color: 'black', textDecoration: 'none', fontSize:"1rem"}}>pesentileonid@gmail.com</a>
-                        }
+                        <Grid container direction="column" alignItems="center">
+                            <Grid item xs={12}>
+                                <Button onClick={() => setInstaClick(true)} style={{ color: 'black', textDecoration: 'none', fontSize: "1.2rem", fontFamily: 'Helvetica' }}>instagram</Button>
+                            </Grid>
+                            <Grid item xs={12}>
+                                {instaClick && <><br /><a href="https://www.instagram.com/hennibbale/" style={{ color: 'black', textDecoration: 'none', fontSize: "1rem" }}>@hennibbale</a></>}
+                            </Grid>
+                        </Grid>
                     </Grid>
+                    <Button onClick={() => setClicked(true)} style={{ color: 'black', textDecoration: 'none', fontSize: "1.2rem", fontFamily: 'Helvetica', marginTop: "5vh" }}>e-mail</Button>
+                    {clicked && !verified && <Reaptcha
+                        sitekey={'6Le12eMhAAAAAAJkvS4zSYBrLI-rVvX5WF5v8lAR'}
+                        onVerify={() => setVerified(true)}
+                    >
+                    </Reaptcha>}
+                    {verified &&
+                        <a href="mailto:pesentileonid@gmail.com" style={{ color: 'black', textDecoration: 'none', fontSize: "1rem" }}>pesentileonid@gmail.com</a>
+                    }
+                </Grid>
 
             </Box>
             <Footer fixed></Footer>

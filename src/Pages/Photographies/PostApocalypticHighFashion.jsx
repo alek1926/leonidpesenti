@@ -11,7 +11,6 @@ import pic11 from "./photography/fashion/post-apocalyptic high fashion/leonidpes
 import pic12 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-26.jpg";
 import pic13 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-27.jpg";
 import pic14 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-28.jpg";
-import pic15 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-29.jpg";
 import pic16 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-30.jpg";
 import pic17 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-31.jpg";
 import pic18 from "./photography/fashion/post-apocalyptic high fashion/leonidpesenti-79.jpg";
@@ -31,14 +30,13 @@ export default function PostApocalypticHighFashion() {
             }
         }
     });
-    let images = [pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23];
+    let images = [pic10, pic11, pic12, pic13, pic14, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23];
 
     const modalStyle = {
         position: 'absolute',
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: '50vw',
         maxHeight: '80vh',
         bgcolor: 'background.paper',
         border: '2px solid #000',
@@ -55,6 +53,7 @@ export default function PostApocalypticHighFashion() {
 
     const [open, setOpen] = React.useState(false);
     const [modalData, setModalData] = React.useState(null);
+    const [imageHeight, setImageHeight] = React.useState(null);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
@@ -68,7 +67,7 @@ export default function PostApocalypticHighFashion() {
                 flexDirection="column"
             >
             <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// fashion</Link>
-                    <Link to="/ph/fashion/postapocalyptichighfashion" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"    }} marginLeft="2vw">// post-apocalyptic high fashion
+                    <Link to="/ph/fashion/postapocalyptichighfashion" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"    }} marginLeft="2vw">// "post-apocalyptic high fashion"
                 </Link>
 
                 
@@ -94,6 +93,12 @@ export default function PostApocalypticHighFashion() {
                                     <Button onClick={() => {
                                         setModalData(image);
                                         handleOpen();
+                                        const img = new Image();
+                                        img.src = image;     
+                                        img.onload = () => {               
+                                           setImageHeight(img.height);
+                                           console.log(imageHeight)
+                                         };
                                     }}>
                                         <img src={image} width="100%" />
                                     </Button>
@@ -112,7 +117,7 @@ export default function PostApocalypticHighFashion() {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={modalStyle}>
-                    <img src={modalData} width="100%" />
+                    <img src={modalData} width={imageHeight>900? '500px':"100%"} height={imageHeight>900 ? '720px':"100%"}/>
                 </Box>
             </Modal>
 

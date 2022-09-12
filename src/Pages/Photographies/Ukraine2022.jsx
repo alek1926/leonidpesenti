@@ -37,7 +37,6 @@ export default function Ukraine2022() {
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: '50vw',
         maxHeight: '80vh',
         bgcolor: 'background.paper',
         border: '2px solid #000',
@@ -54,6 +53,7 @@ export default function Ukraine2022() {
 
     const [open, setOpen] = React.useState(false);
     const [modalData, setModalData] = React.useState(null);
+    const [imageHeight, setImageHeight] = React.useState(null);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
@@ -90,7 +90,13 @@ export default function Ukraine2022() {
                                 <Grid item xs={3} key={image} >
                                     <Button onClick={()=>{
                                         setModalData(image);
-                                         handleOpen();
+                                        handleOpen();
+                                        const img = new Image();
+                                        img.src = image;     
+                                        img.onload = () => {               
+                                           setImageHeight(img.height);
+                                           console.log(imageHeight)
+                                         };
                                          }}>
                                         <img src={image} width="100%" />
                                     </Button>
@@ -109,7 +115,7 @@ export default function Ukraine2022() {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={modalStyle}>
-                    <img src={modalData} width="100%" />
+                <img src={modalData} width={imageHeight>900? '500px':"100%"} height={imageHeight>900 ? '720px':"100%"}/>
                 </Box>
             </Modal>
 

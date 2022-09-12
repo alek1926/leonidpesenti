@@ -22,7 +22,7 @@ export default function Photography() {
                 display="flex"
                 justifyContent="center"
                 alignItems="start"
-                minHeight="90vh"
+                height="88vh"
                 marginTop="5vh"
             >
                 <Typography variant="h1">// photography
@@ -36,7 +36,6 @@ export default function Photography() {
                 </Typography>
             </Box>
             <Footer></Footer>
-            <Outlet />
         </ThemeProvider>
     );
 }

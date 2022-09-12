@@ -28,8 +28,8 @@ import pic20 from "./photography/portraits/leonidpesenti-77.jpg";
 import pic21 from "./photography/portraits/leonidpesenti-78.jpg";
 import Footer from "../Footer";
 
-
 export default function Portraits() {
+
     const theme = createTheme({
         typography: {
             h1:{
@@ -40,12 +40,13 @@ export default function Portraits() {
     });
     let images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20, pic21];
 
+
+
     const modalStyle = {
         position: 'absolute',
         top: '50%',
         left: '50%',
         transform: 'translate(-50%, -50%)',
-        width: '50vw',
         maxHeight: '80vh',
         bgcolor: 'background.paper',
         border: '2px solid #000',
@@ -62,8 +63,10 @@ export default function Portraits() {
 
     const [open, setOpen] = React.useState(false);
     const [modalData, setModalData] = React.useState(null);
+    const [imageHeight, setImageHeight] = React.useState(null);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
+
 
     return (
         <ThemeProvider theme={theme}>
@@ -77,6 +80,7 @@ export default function Portraits() {
         <Typography variant="h1">// portraits</Typography>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
+
                         if (tablet) {
                             return (
                                 <Grid item xs={6} key={image} >
@@ -94,9 +98,16 @@ export default function Portraits() {
                         else {
                             return (
                                 <Grid item xs={3} key={image} >
+                                    
                                     <Button onClick={()=>{
                                         setModalData(image);
                                          handleOpen();
+                                         const img = new Image();
+                                         img.src = image;     
+                                         img.onload = () => {               
+                                            setImageHeight(img.height);
+                                            console.log(imageHeight)
+                                          };
                                          }}>
                                         <img src={image} width="100%" />
                                     </Button>
@@ -113,9 +124,11 @@ export default function Portraits() {
                 onClose={handleClose}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
+                overflow="hidden"
+                alignItems="center"
             >
-                <Box sx={modalStyle}>
-                    <img src={modalData} width="100%" />
+                <Box sx={modalStyle} >
+                    <img src={modalData} width={imageHeight>900? '500px':"100%"} height={imageHeight>900 ? '720px':"100%"}/>
                 </Box>
             </Modal>
 

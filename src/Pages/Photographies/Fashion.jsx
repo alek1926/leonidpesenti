@@ -58,7 +58,7 @@ export default function Fashion() {
 
                     <Typography variant="h1">// fashion
                     <List sx={{ marginLeft: '1vw' }}>
-                    <ListItem><Link to="/ph/fashion/postapocalyptichighfashion" style={{ color: 'black', alignItems: 'center', textDecoration: 'none' }}>// post-apocalyptic high fashion
+                    <ListItem><Link to="/ph/fashion/postapocalyptichighfashion" style={{ color: 'black', alignItems: 'center', textDecoration: 'none' }}>// "post-apocalyptic high fashion"
                     </Link></ListItem>
                         <ListItem><Link to="/ph/fashion/locarno" style={{ color: 'black', alignItems: 'center', textDecoration: 'none' }}>// locarno
                         </Link></ListItem>
