@@ -68,7 +68,7 @@ export default function Ukraine2022() {
                 flexDirection="column"
             >
             <Link to="/ph/reportage" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem", marginBottom: "2vh"    }}>// reportage</Link>
-            <Link to="/ph/reportage/ukraine2022" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"}} >// ukraine2022
+            <Link to="/ph/reportage/ukraine2022" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"}} >// ukraine 2022
             </Link>
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh" marginTop="5vh">
                     {images.map((image) => {
