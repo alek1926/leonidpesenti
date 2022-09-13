@@ -13,8 +13,6 @@ import Photography from './Pages/Photography';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import WallTextures from './Pages/Photographies/WallTextures';
-import Milan from './Pages/Photographies/Milan';
-import Locarno from './Pages/Photographies/Locarno';
 import Ukraine2022 from './Pages/Photographies/Ukraine2022';
 import PostApocalypticHighFashion from './Pages/Photographies/PostApocalypticHighFashion';
 
@@ -33,8 +31,6 @@ root.render(
         <Route path="/ph/architecture/walltextures" element={<WallTextures />} />
         <Route path="/ph/fashion" element={<Fashion />} />
         <Route path="/ph/fashion/postapocalyptichighfashion" element={<PostApocalypticHighFashion />} />
-        <Route path="/ph/fashion/locarno" element={<Locarno />} />
-        <Route path="/ph/fashion/milan" element={<Milan />} />
         <Route path="/ph/portraits" element={<Portraits />} />
         <Route path="/ph/reportage" element={<Reportage />} />
         <Route path="/ph/reportage/ukraine2022" element={<Ukraine2022 />} />

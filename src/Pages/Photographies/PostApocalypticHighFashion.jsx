@@ -54,6 +54,7 @@ export default function PostApocalypticHighFashion() {
     const [open, setOpen] = React.useState(false);
     const [modalData, setModalData] = React.useState(null);
     const [imageHeight, setImageHeight] = React.useState(null);
+    const [imageWidth, setImageWidth] = React.useState(null);
     const handleOpen = () => setOpen(true);
     const handleClose = () => setOpen(false);
 
@@ -97,6 +98,7 @@ export default function PostApocalypticHighFashion() {
                                         img.src = image;     
                                         img.onload = () => {               
                                            setImageHeight(img.height);
+                                           setImageWidth(img.width);
                                            console.log(imageHeight)
                                          };
                                     }}>
@@ -117,7 +119,7 @@ export default function PostApocalypticHighFashion() {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={modalStyle}>
-                    <img src={modalData} width={imageHeight>900? '500px':"100%"} height={imageHeight>900 ? '720px':"100%"}/>
+                <img src={modalData} height={imageHeight>900? imageHeight*.60 :"100%"} width={imageHeight>900 ? imageWidth*.60 :"100%"}/>
                 </Box>
             </Modal>
 
