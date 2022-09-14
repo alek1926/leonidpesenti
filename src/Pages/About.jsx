@@ -31,7 +31,7 @@ export default function About() {
                 display="flex"
                 justifyContent="center"
                 alignItems="start"
-                minHeight="95vh"
+                height="88vh"
                 marginTop="5vh"
                 maxWidth="100vw"
             >
@@ -44,15 +44,15 @@ export default function About() {
                     <Grid item xs={12}>
                         <Typography variant="h1">// about</Typography>
                     </Grid>
-                    <Grid item xs={12} marginTop = "5vh" marginLeft={sm?"3vw":0}>
+                    <Grid item xs={12}  margin = "5vw" marginBottom={!sm?'2vw':'0'}width={'90vw'} >
                         <Typography variant="h3">russian-born switzerland-based mathematics and psychology student</Typography>
                     </Grid>
-                    <Grid item xs={12} margin = "5vw" width={'90vw'} justifyContent="center">
+                    <Grid item xs={12} margin = "5vw" marginTop={sm?'5vw':'0'} width={'90vw'} >
                         <img src={pic} width={'100%'}></img>
                     </Grid>
                 </Grid>
             </Box>
-            <Footer></Footer>
+            <Footer fixed></Footer>
         </ThemeProvider>
     );
 }

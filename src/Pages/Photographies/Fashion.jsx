@@ -70,11 +70,11 @@ export default function Fashion() {
                 flexDirection="column"
             >
 
-                <Typography variant={sm ? "h5" : "h1"}>// fashion
+                <Typography variant={sm ? "h5" : "h1"}>// fashion{/*
                     <List sx={{ marginLeft: '1vw' }}>
                         <ListItem><Link to="/ph/fashion/postapocalyptichighfashion" style={{ color: 'black', alignItems: 'center', textDecoration: 'none' }}>// "post-apocalyptic high fashion"
                         </Link></ListItem>
-                    </List>
+                    </List>*/}
                 </Typography>
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.length > 0 && images.map((image) => {

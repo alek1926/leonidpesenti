@@ -63,9 +63,9 @@ export default function Architecture() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-            <Link to="/ph/architecture" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// architecture</Link>
+            <Link to="/ph/architecture" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// architecture</Link>{/*
         <Link to = "/ph/architecture/walltextures" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", fontFamily: "Helvetica"  }} marginLeft="2vw">// "wall textures"</Link>
-        
+    */}
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
                         if (tablet) {

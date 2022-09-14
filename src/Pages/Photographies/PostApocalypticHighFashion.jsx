@@ -26,8 +26,12 @@ export default function PostApocalypticHighFashion() {
         typography: {
             h1: {
                 fontFamily: "Helvetica",
-                fontSize: "3rem"
-            }
+                fontSize: "2rem"
+            },
+            h1: {
+                fontFamily: "Helvetica",
+                fontSize: "1.5rem"
+            },
         }
     });
     let images = [pic10, pic11, pic12, pic13, pic14, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23];
@@ -67,10 +71,7 @@ export default function PostApocalypticHighFashion() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-            <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// fashion</Link>
-                    <Link to="/ph/fashion/postapocalyptichighfashion" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"    }} marginLeft="2vw">// "post-apocalyptic high fashion"
-                </Link>
-
+            <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"7vw"    }}>// "post-apocalyptic high fashion"</Link>
                 
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.map((image) => {
