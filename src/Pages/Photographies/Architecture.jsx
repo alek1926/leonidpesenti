@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -63,7 +63,7 @@ export default function Architecture() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-            <Link to="/ph/architecture" style={{ color: 'black', textDecoration: 'none', fontSize:"3rem"    }}>// architecture</Link>{/*
+            <Typography style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"2vw"    }}>// architecture</Typography>{/*
         <Link to = "/ph/architecture/walltextures" variant="h1" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", fontFamily: "Helvetica"  }} marginLeft="2vw">// "wall textures"</Link>
     */}
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">

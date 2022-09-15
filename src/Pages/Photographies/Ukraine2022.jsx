@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -67,8 +67,8 @@ export default function Ukraine2022() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-            <Link to="/ph/reportage/ukraine2022" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem"}} >// ukraine 2022
-            </Link>
+            <Typography style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"2vw"    }}>// ukraine 2022</Typography>
+            
         <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh" marginTop="5vh">
                     {images.map((image) => {
                         if (tablet) {

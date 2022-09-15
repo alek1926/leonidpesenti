@@ -14,7 +14,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import WallTextures from './Pages/Photographies/WallTextures';
 import Ukraine2022 from './Pages/Photographies/Ukraine2022';
-import PostApocalypticHighFashion from './Pages/Photographies/PostApocalypticHighFashion';
+import Pahf from './Pages/Photographies/PostApocalypticHighFashion';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -30,7 +30,7 @@ root.render(
         <Route path="/ph/architecture" element={<Architecture />} />
         <Route path="/ph/architecture/walltextures" element={<WallTextures />} />
         <Route path="/ph/fashion" element={<Fashion />} />
-        <Route path="/ph/fashion/postapocalyptichighfashion" element={<PostApocalypticHighFashion />} />
+        <Route path="/ph/pahf" element={<Pahf />} />
         <Route path="/ph/portraits" element={<Portraits />} />
         <Route path="/ph/reportage" element={<Reportage />} />
         <Route path="/ph/reportage/ukraine2022" element={<Ukraine2022 />} />

@@ -32,7 +32,7 @@ export default function Fashion() {
             }
         }
     });
-    let images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9];
+    let images = [pic6, pic8, pic1, pic5, pic7, pic3, pic2, pic4, pic9];
 
     const modalStyle = {
         position: 'absolute',
@@ -70,12 +70,8 @@ export default function Fashion() {
                 flexDirection="column"
             >
 
-                <Typography variant={sm ? "h5" : "h1"}>// fashion{/*
-                    <List sx={{ marginLeft: '1vw' }}>
-                        <ListItem><Link to="/ph/fashion/postapocalyptichighfashion" style={{ color: 'black', alignItems: 'center', textDecoration: 'none' }}>// "post-apocalyptic high fashion"
-                        </Link></ListItem>
-                    </List>*/}
-                </Typography>
+                <Typography style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"2vw"    }}>// fashion</Typography>
+
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.length > 0 && images.map((image) => {
                         if (tablet) {

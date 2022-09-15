@@ -34,7 +34,7 @@ export default function PostApocalypticHighFashion() {
             },
         }
     });
-    let images = [pic13, pic11, pic19, pic10, pic14, pic16, pic17, pic18, pic12, pic20, pic21, pic22, pic23];
+    let images = [pic14, pic16, pic10, pic23, pic13, pic19, pic17, pic18];
 
     const modalStyle = {
         position: 'absolute',
@@ -71,7 +71,7 @@ export default function PostApocalypticHighFashion() {
                 marginTop={lg ? "5vh" : "0"}
                 flexDirection="column"
             >
-            <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"7vw"    }}>// "post-apocalyptic high fashion"</Link>
+            <Typography style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"2vw"    }}>// "post-apocalyptic high fashion"</Typography>
             
 
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
