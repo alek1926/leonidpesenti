@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.e6c13ad2.css",
-    "main.js": "/static/js/main.1d990522.js",
+    "main.js": "/static/js/main.3fb869cd.js",
     "static/js/787.0b2fe01a.chunk.js": "/static/js/787.0b2fe01a.chunk.js",
     "static/media/tq1yA46.jpeg": "/static/media/tq1yA46.18a31d17e2011eeeb3af.jpeg",
     "static/media/leonidpesenti-60.jpg": "/static/media/leonidpesenti-60.9aa1b4b9b667c0c93009.jpg",
@@ -31,7 +31,6 @@
     "static/media/leonidpesenti-13.jpg": "/static/media/leonidpesenti-13.4159c4333727d0253990.jpg",
     "static/media/leonidpesenti-69.jpg": "/static/media/leonidpesenti-69.4f6d36d8b9d3c3ce5af8.jpg",
     "static/media/leonidpesenti-7.jpg": "/static/media/leonidpesenti-7.137efcb0569de607bf53.jpg",
-    "static/media/leonidpesenti-29.jpg": "/static/media/leonidpesenti-29.aba71543a9f425ed03e6.jpg",
     "static/media/leonidpesenti-68.jpg": "/static/media/leonidpesenti-68.3644f1196b0744e9ba30.jpg",
     "static/media/leonidpesenti-12.jpg": "/static/media/leonidpesenti-12.946e058ca6f69b606138.jpg",
     "static/media/leonidpesenti-16.jpg": "/static/media/leonidpesenti-16.cf2c8b6c0d1a78302a8f.jpg",
@@ -94,11 +93,11 @@
     "static/media/leonidpesenti-1.jpg": "/static/media/leonidpesenti-1.6d00459a98bb70ea5b1e.jpg",
     "index.html": "/index.html",
     "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
-    "main.1d990522.js.map": "/static/js/main.1d990522.js.map",
+    "main.3fb869cd.js.map": "/static/js/main.3fb869cd.js.map",
     "787.0b2fe01a.chunk.js.map": "/static/js/787.0b2fe01a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.1d990522.js"
+    "static/js/main.3fb869cd.js"
   ]
 }

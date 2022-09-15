@@ -2,7 +2,7 @@ import * as React from "react";
 import { Link } from "react-router-dom";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import { ThemeProvider, createTheme } from '@mui/material';
+import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button';
 import useMediaQuery from '@mui/material/useMediaQuery';
@@ -34,7 +34,7 @@ export default function PostApocalypticHighFashion() {
             },
         }
     });
-    let images = [pic10, pic11, pic12, pic13, pic14, pic16, pic17, pic18, pic19, pic20, pic21, pic22, pic23];
+    let images = [pic13, pic11, pic19, pic10, pic14, pic16, pic17, pic18, pic12, pic20, pic21, pic22, pic23];
 
     const modalStyle = {
         position: 'absolute',
@@ -72,8 +72,10 @@ export default function PostApocalypticHighFashion() {
                 flexDirection="column"
             >
             <Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"7vw"    }}>// "post-apocalyptic high fashion"</Link>
-                
+            
+
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
+                
                     {images.map((image) => {
                         if (tablet) {
                             return (
