@@ -116,7 +116,7 @@ export default function Ukraine2022() {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={modalStyle}>
-                <img src={modalData} height={imageHeight>900? imageHeight*.60 :"100%"} width={imageHeight>900 ? imageWidth*.60 :"100%"}/>
+                <img src={modalData} height={imageHeight>900? imageHeight*.50 :"100%"} width={imageHeight>900 ? imageWidth*.50 :"100%"}/>
                 </Box>
             </Modal>
 

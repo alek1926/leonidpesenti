@@ -33,7 +33,7 @@ root.render(
           <Route path='/ph/pahf' element={<Pahf />} />
           <Route path='/ph/portraits' element={<Portraits />} />
           <Route path='/ph/reportage' element={<Reportage />} />
-          <Route path='/ph//ukraine2022' element={<Ukraine2022 />} />
+          <Route path='/ph/ukraine2022' element={<Ukraine2022 />} />
           <Route path='*' element={<Home />} />
       </Routes>
     </BrowserRouter>

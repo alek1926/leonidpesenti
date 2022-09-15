@@ -9,15 +9,27 @@ import useMediaQuery from '@mui/material/useMediaQuery';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import Footer from "../Footer";
-import pic6 from "./photography/fashion/milan/leonidpesenti-72.jpg";
-import pic7 from "./photography/fashion/milan/leonidpesenti-73.jpg";
-import pic8 from "./photography/fashion/milan/leonidpesenti-74.jpg";
-import pic9 from "./photography/fashion/milan/leonidpesenti-75.jpg";
+
 import pic1 from "./photography/fashion/locarno/leonidpesenti-67.jpg";
 import pic2 from "./photography/fashion/locarno/leonidpesenti-68.jpg";
 import pic3 from "./photography/fashion/locarno/leonidpesenti-69.jpg";
 import pic4 from "./photography/fashion/locarno/leonidpesenti-70.jpg";
 import pic5 from "./photography/fashion/locarno/leonidpesenti-71.jpg";
+import pic6 from "./photography/fashion/leonidpesenti1-1.jpg";
+import pic7 from "./photography/fashion/leonidpesenti1-2.jpg";
+import pic8 from "./photography/fashion/leonidpesenti1-3.jpg";
+import pic9 from "./photography/fashion/leonidpesenti1-4.jpg";
+import pic10 from "./photography/fashion/leonidpesenti1-5.jpg";
+import pic11 from "./photography/fashion/leonidpesenti1-6.jpg";
+import pic12 from "./photography/fashion/leonidpesenti1-7.jpg";
+import pic13 from "./photography/fashion/leonidpesenti1-8.jpg";
+import pic14 from "./photography/fashion/leonidpesenti1-9.jpg";
+import pic15 from "./photography/fashion/leonidpesenti1-10.jpg";
+import pic16 from "./photography/fashion/leonidpesenti1-11.jpg";
+import pic17 from "./photography/fashion/milan/leonidpesenti-72.jpg";
+import pic18 from "./photography/fashion/milan/leonidpesenti-73.jpg";
+import pic19 from "./photography/fashion/milan/leonidpesenti-74.jpg";
+import pic20 from "./photography/fashion/milan/leonidpesenti-75.jpg";
 
 export default function Fashion() {
     const theme = createTheme({
@@ -32,7 +44,7 @@ export default function Fashion() {
             }
         }
     });
-    let images = [pic6, pic8, pic1, pic5, pic7, pic3, pic2, pic4, pic9];
+    let images = [pic1, pic2, pic3, pic4, pic5, pic6, pic7, pic8, pic9, pic10, pic11, pic12, pic13, pic14, pic15, pic16, pic17, pic18, pic19, pic20];
 
     const modalStyle = {
         position: 'absolute',
@@ -119,7 +131,7 @@ export default function Fashion() {
                 aria-describedby="modal-modal-description"
             >
                 <Box sx={modalStyle}>
-                <img src={modalData} height={imageHeight>900? imageHeight*.60 :"100%"} width={imageHeight>900 ? imageWidth*.60 :"100%"}/>
+                <img src={modalData} height={imageHeight>900? imageHeight*.50 :"100%"} width={imageHeight>900 ? imageWidth*.50 :"100%"}/>
                 </Box>
             </Modal>
 

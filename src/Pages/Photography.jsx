@@ -39,7 +39,7 @@ export default function Photography() {
                         <ListItem><Link to="/ph/architecture" style={{ color: 'black', textDecoration: 'none' }}>// architecture</Link></ListItem>
                         <ListItem><Link to="/ph/fashion" style={{ color: 'black', textDecoration: 'none' }}>// fashion</Link></ListItem>
                         <ListItem><Link to="/ph/portraits" style={{ color: 'black', textDecoration: 'none' }}>// portraits</Link></ListItem>
-                        <ListItem><Link to="/ph/reportage/ukraine2022" style={{ color: 'black', textDecoration: 'none' }}>// ukraine 2022</Link></ListItem>
+                        <ListItem><Link to="/ph/ukraine2022" style={{ color: 'black', textDecoration: 'none' }}>// ukraine 2022</Link></ListItem>
                     </List>
                 </Typography>
             </Box>
