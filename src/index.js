@@ -11,7 +11,7 @@ import Portraits from './Pages/Photographies/Portraits';
 import Reportage from './Pages/Photographies/Reportage';
 import Photography from './Pages/Photography';
 import reportWebVitals from './reportWebVitals';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, Switch } from 'react-router-dom';
 import WallTextures from './Pages/Photographies/WallTextures';
 import Ukraine2022 from './Pages/Photographies/Ukraine2022';
 import PostApocalypticHighFashion from './Pages/Photographies/PostApocalypticHighFashion';
@@ -34,6 +34,7 @@ root.render(
         <Route path="/ph/portraits" element={<Portraits />} />
         <Route path="/ph/reportage" element={<Reportage />} />
         <Route path="/ph/reportage/ukraine2022" element={<Ukraine2022 />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
