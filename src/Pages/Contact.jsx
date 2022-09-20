@@ -57,7 +57,7 @@ export default function Contact() {
                     </Grid>
                     <Button onClick={() => setClicked(true)} style={{ color: 'black', textDecoration: 'none', fontSize: "1.2rem", fontFamily: 'Helvetica', marginTop: "5vh" }}>e-mail</Button>
                     {clicked && !verified && <Reaptcha
-                        sitekey={'6LfJZPchAAAAAJ25X3Wh6xkXaN44-UpbtSIr9nKk'}
+                        sitekey={'6LdvoBUiAAAAAOYKJioDjPixelK8Gk66btTfziyo'}
                         onVerify={() => setVerified(true)}
                     >
                     </Reaptcha>}
