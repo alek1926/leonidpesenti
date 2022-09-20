@@ -1,6 +1,7 @@
 import * as React from "react";
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import { Link } from 'react-router-dom';
 import { ThemeProvider, createTheme, Typography } from '@mui/material';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import pic from './Photographies/photography/tq1yA46.jpeg';
@@ -46,6 +47,10 @@ export default function About() {
                     </Grid>
                     <Grid item xs={12}  margin = "5vw" marginBottom={!sm?'2vw':'0'}width={'90vw'} >
                         <Typography variant="h3">russian-born switzerland-based mathematics and psychology student</Typography>
+
+                        <Typography variant="h3"><br />
+                        <br />
+                        // between Aug 20th and Sep 4th 2022 my project <Link to="/ph/pahf">"post-apocalyptic high fashion"</Link> was exhibited at <a target="_blank" href="https://www.gallerialaloggia.chg">Galleria La Loggia</a></Typography>
                     </Grid>
                     <Grid item xs={12} margin = "5vw" marginTop={sm?'5vw':'0'} width={'90vw'} >
                         <img src={pic} width={'100%'}></img>

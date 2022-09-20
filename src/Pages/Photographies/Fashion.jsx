@@ -83,6 +83,9 @@ export default function Fashion() {
             >
 
                 <Typography style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"2vw"    }}>// fashion</Typography>
+                <Typography style={{fontSize:"1rem"}}>
+// models: <a target="_blank" href="https://www.instagram.com/lilith.becker/">Lilith</a> / <a target="_blank" href="https://www.instagram.com/isabelle.bt/">Isabelle</a> / <a target="_blank" href="https://www.instagram.com/kay.aug/">Kay</a> / others</Typography>
+
 
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
                     {images.length > 0 && images.map((image) => {
