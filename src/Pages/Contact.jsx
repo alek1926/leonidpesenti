@@ -25,7 +25,14 @@ export default function Contact() {
     let [clicked, setClicked] = React.useState(false);
     let [instaClick, setInstaClick] = React.useState(false);
 
-    let [verified, setVerified] = React.useState(false);
+    let [email, setEmail] = React.useState('moc.liamg@dinoelitnesep');
+
+    let handleClick = () => {
+        setClicked(!clicked); 
+        
+        setEmail(email.split("").reverse().join(""))
+    }
+
 
     return (
         <ThemeProvider theme={theme}>
@@ -55,14 +62,9 @@ export default function Contact() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Button onClick={() => setClicked(true)} style={{ color: 'black', textDecoration: 'none', fontSize: "1.2rem", fontFamily: 'Helvetica', marginTop: "5vh" }}>e-mail</Button>
-                    {clicked && !verified && <Reaptcha
-                        sitekey={'6LdvoBUiAAAAAOYKJioDjPixelK8Gk66btTfziyo'}
-                        onVerify={() => setVerified(true)}
-                    >
-                    </Reaptcha>}
-                    {verified &&
-                        <a href="mailto:pesentileonid@gmail.com" style={{ color: 'black', textDecoration: 'none', fontSize: "1rem" }}>pesentileonid@gmail.com</a>
+                    <Button onClick={handleClick} style={{ color: 'black', textDecoration: 'none', fontSize: "1.2rem", fontFamily: 'Helvetica', marginTop: "5vh" }}>e-mail</Button>
+                    {clicked &&
+                        <a href={"mailto:" + email } style={{ color: 'black', textDecoration: 'none', fontSize: "1rem" }}>{email}</a>
                     }
                 </Grid>
 

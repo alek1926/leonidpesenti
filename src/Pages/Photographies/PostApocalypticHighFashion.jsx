@@ -74,7 +74,7 @@ export default function PostApocalypticHighFashion() {
             <Typography style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"2vw"    }}>// "post-apocalyptic high fashion"</Typography>
             <Typography style={{fontSize:"1rem"}}>// styling: <a target="_blank" href="https://www.instagram.com/cielo_solari/">Cielo Solari</a><br />// models: <a target="_blank" href="https://www.instagram.com/nassiali_/">Nassi</a> / <a target="_blank" href="https://www.instagram.com/zoecaminada/">Zoe</a></Typography>
 
-                <Grid container direction="row" spacing={2} padding="5vh" paddingTop="5vh">
+                <Grid container direction="row" spacing={2} padding="5vh" paddingTop="0vh" marginTop="1vh">
                 
                     {images.map((image) => {
                         if (tablet) {
