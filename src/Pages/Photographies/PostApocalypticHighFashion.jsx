@@ -69,10 +69,11 @@ export default function PostApocalypticHighFashion() {
                 justifyContent="center"
                 alignItems="center"
                 marginTop={lg ? "5vh" : "0"}
+                padding="8vh"
                 flexDirection="column"
             >
             <Typography style={{ color: 'black', textDecoration: 'none', fontSize:"2rem", margin:"2vw"    }}>// "post-apocalyptic high fashion"</Typography>
-            <Typography style={{fontSize:"1rem"}}>// styling: <a target="_blank" href="https://www.instagram.com/cielo_solari/">Cielo Solari</a><br />// models: <a target="_blank" href="https://www.instagram.com/nassiali_/">Nassi</a> / <a target="_blank" href="https://www.instagram.com/zoecaminada/">Zoe</a></Typography>
+            <Typography style={{fontSize:"1rem"}}><a target="_blank" href="https://drive.google.com/file/d/1Rk5SzKeViwDgPFSOUjwnHk69U4uPdbzq/view?usp=share_link">english</a> and <a target="_blank" href="https://drive.google.com/file/d/1Rk5SzKeViwDgPFSOUjwnHk69U4uPdbzq/view?usp=share_link">italian</a> versions of the project that was exhibited at <a target="_blank" href="https://www.gallerialaloggia.ch">Galleria La Loggia</a><br /> <br />Calcareous slopes which display a desolated landscape, that offer nothing but dead trees and traces of an ancient village, encased by tall mountains in the process of losing their snowy tops to the approach of warmer seasons. What are the values of beauty and fashion in a dead world?<br /><br /><a target="_blank" href="https://www.instagram.com/p/CiTKJFiq_UR/">some pictures from the gallery</a><br /> <br />// styling: <a target="_blank" href="https://www.instagram.com/cielo_solari/">Cielo Solari</a><br />// models: <a target="_blank" href="https://www.instagram.com/nassiali_/">Nassi</a> / <a target="_blank" href="https://www.instagram.com/zoecaminada/">Zoe</a></Typography>
 
                 <Grid container direction="row" spacing={2} padding="5vh" paddingTop="0vh" marginTop="1vh">
                 

@@ -50,7 +50,7 @@ export default function About() {
 
                         <Typography variant="h3"><br />
                         <br />
-                        // between Aug 20th and Sep 4th 2022 my project <Link to="/ph/pahf">"post-apocalyptic high fashion"</Link> was exhibited at <a target="_blank" href="https://www.gallerialaloggia.chg">Galleria La Loggia</a></Typography>
+                        // between Aug 20th and Sep 4th 2022 my project <Link to="/ph/pahf">"post-apocalyptic high fashion"</Link> was exhibited at <a target="_blank" href="https://www.gallerialaloggia.ch">Galleria La Loggia</a></Typography>
                     </Grid>
                     <Grid item xs={12} margin = "5vw" marginTop={sm?'5vw':'0'} width={'90vw'} >
                         <img src={pic} width={'100%'}></img>
